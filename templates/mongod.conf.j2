@@ -52,6 +52,7 @@ systemLog:
   logAppend: {{ mongodb_systemlog_logappend | to_nice_json }}
   logRotate: {{ mongodb_systemlog_logrotate }}
   path: {{ mongodb_systemlog_path }}
+  logRotate: {{ mongodb_systemlog_logrotate }}
   {% endif %}
 
 {% if mongodb_set_parameters -%}
